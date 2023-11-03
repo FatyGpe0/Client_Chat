@@ -1,0 +1,29 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "es un chat cliente servidor",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
+  },
+  "keywords": [
+    "chat",
+    "socket",
+    "node"
+  ],
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "author": "Fatima Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "readline-sync": "^1.4.10"
+  }
+}
