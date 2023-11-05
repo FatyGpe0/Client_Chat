@@ -5,7 +5,7 @@ const router = express.Router();
 
 const servidor={
     port:3000,
-    host: 'localhost'
+    host: 'https://serverchat-z1k5.onrender.com'
 }
 
 const client = net.createConnection(servidor);
