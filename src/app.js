@@ -8,7 +8,7 @@ const {default: mongoose} = require('mongoose');
 const http = require('http'); // Importa el módulo http
 
 
-app.set('port', process.env.PORT || 4000 ); 
+//app.set('port', process.env.PORT || 4000 ); 
 app.set('view engine', 'ejs');
 
 //Middleware utiliza morgan
@@ -45,7 +45,7 @@ app.get('/index', (req, res) => {
 });*/
 
 app.listen(app.get('port'), () =>{
-    console.log('El servidor esta funcionando en el puerto', app.get('port'));
+    console.log('El servidor esta funcionando en', (process.env.PORT));
 });
 
 mongoose.connect("mongodb+srv://faty:Sx09AnoKdsJewkAY@cluster0.q3on5sh.mongodb.net/Chat?retryWrites=true&w=majority")
